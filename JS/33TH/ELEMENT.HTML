@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+</body>
+<SCript>
+    const name = document.createElement("box")
+    console.log(name);
+    name.className = "main" ;
+    name.id = "idsss"
+    //Atributses : --- >
+    name.setAttribute("title" , "generated title");
+    name.style.backgroundColor = "red" ;
+    name.style.padding = "12px" ; 
+    // // name.innerText = "Hello world" ;
+    //Append child : --- > Another way of adding text 
+    const adding = document.createTextNode("Hello world") ;
+    name.appendChild(adding)
+</SCript>
+</html>

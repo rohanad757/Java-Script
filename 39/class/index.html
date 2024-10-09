@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="text">Hello</h1>
+    <button id="but" style="background-color: blue;">Stop</button>
+</body>
+<script>
+    let text = document.getElementById("text");
+    let but = document.getElementById("but");
+
+    let res = setTimeout(change,2000,"hi");
+
+    function change(hi){
+        text.innerHTML = "Hello can be changed Brother";
+        console.log(hi,Date.now());
+        
+    }
+
+    but.addEventListener('click',()=>{
+        clearTimeout(res);
+        console.log('Stopped');
+    })
+</script>
+</html>
